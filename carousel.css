@@ -1,0 +1,90 @@
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+#cantainer {
+    margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  #main{
+   
+    padding: 5px;
+    justify-content: space-between;
+  }
+  #main > div {
+
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px;
+    border-color: black;
+    margin: 5px;
+  }
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: 0;
+    left:250px;
+  }
+  #next_button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  #previous_button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left:13%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
